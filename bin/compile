@@ -35,10 +35,10 @@ curl --silent --max-time 60 --location "$APACHE_URL" | tar xz
 cp $LP_DIR/conf/httpd.conf apache/conf
 
 #@note @neko @haxe installer neko
-NEKO_URL="http://nekovm.org/_media/neko-1.8.2-linux64.tar.gz"
+NEKO_URL="http://nekovm.org/_media/neko-2.0.0-linux64.tar.gz"
 echo "-----> Building HAXE"
 curl --silent --max-time 60 --location "$NEKO_URL" | tar xz
-mv neko-1.8.2-linux64 neko
+mv neko-2.0.0-linux64 neko
 mkdir -p lib
 cp $LP_DIR/lib/libgc.tar lib 
 tar xf lib/libgc.tar -C lib
