@@ -42,7 +42,7 @@ mv neko-2.0.0-linux neko
 mkdir -p lib
 cp $LP_DIR/lib/libgc.tar lib 
 tar xf lib/libgc.tar -C lib
-ln -s libc-2.13.so libc.so
+ln -s /lib/libc-2.17.so /lib/libc.so.6
 
 
 
